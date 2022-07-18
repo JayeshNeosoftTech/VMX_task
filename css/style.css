@@ -1059,7 +1059,7 @@ body{
 }
 @media screen and (max-width: 361px){
     .selectserver_div_prev, .selectserver_div_next{
-        top: 58%;
+        top: 56%;
     }
 }
 @media screen and (max-width: 355px){
