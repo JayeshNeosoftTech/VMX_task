@@ -59,6 +59,7 @@ $(document).ready(function () {
         nav:false,
         dots:true,
         margin: 30,
+        dotsEach: 4,
         responsiveClass:true,
         responsive:{
             0:{
@@ -66,20 +67,21 @@ $(document).ready(function () {
                 margin: 0,
                 dots: false
             },
-            525:{
+            575:{
                 items: 2,
-                margin: 5
+                margin: 0
             },
-            750:{
+            768:{
                 items: 3,
-                margin: 15
+                margin: 0
             },
             1024:{
                 items: 4,
+                margin:0
             },
             1280:{
                 items: 5,
-                margin: 10
+                margin: 10,
             }
         }
     });
@@ -92,6 +94,27 @@ $(document).ready(function () {
     $('.selectos_div_prev').click(function() {
         selectos_owl.trigger('prev.owl.carousel');
     });
+    /* Select operating server arrow button code start */
+    checkClasses2();
+    selectos_owl.on('translated.owl.carousel', function(event){
+    checkClasses2();
+    });
+
+    function checkClasses2(){
+        $('.owl-carousel.slide_2 .owl-stage .owl-item.active').removeClass('firstActiveItem2');
+
+        $('.owl-carousel.slide_2 .owl-stage .owl-item.active').each(function(index){
+            if (index === 0) {
+                $('.owl-carousel.slide_2 .owl-stage .owl-item.active .slide2_1').addClass('firstActiveItem2');
+            }
+        });
+        if($('.owl-carousel.slide_2 .owl-stage .owl-item.active .slide2_1').hasClass('firstActiveItem2')==true){
+            $('.selectos_div_prev').css('display','none');
+        }
+        else{
+            $('.selectos_div_prev').css('display','flex');
+        }
+    } /* Select operating server arrow button code end */
 
     /* Select server owl-carousel */
     $(".owl-carousel.slide_3").owlCarousel({
@@ -141,8 +164,6 @@ $(document).ready(function () {
         selectserver_owl.trigger('prev.owl.carousel');
     });
 
-    /* var carousel3= $(".owl-carousel.slide_3"); */
-    /* $('.selectserver_div_prev').css('display','none'); */
     checkClasses3();
     selectserver_owl.on('translated.owl.carousel', function(event){
     checkClasses3();
