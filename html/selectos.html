@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="VMX Hosted Private Cloud">
+    <meta name="keywords" content="VMX, hosting server, cloud">
+    <title>VMX | Select OS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="selectos">
+        <div class="selectos__block container">
+            <img src="../images/logo.svg" alt="logo" class="logo_img1">
+            <div class="selectos__content">
+                <h2 class="selectos__content_heading">Select Your Operating System</h2>
+                <ul class="selectos__content_filter-list">
+                    <li><button class="selectos__content_filterbtn" onclick="selectos_btn()">Popular(4)</button></li>
+                    <li><button class="selectos__content_filterbtn" onclick="selectos_btn()">For Containers</button></li>
+                    <li><button class="selectos__content_filterbtn" onclick="selectos_btn()">VMWare/ESXi(1)</button></li>
+                    <li><button class="selectos__content_filterbtn--all" id="active_btn2" onclick="selectos_btn_all()">Licensed(2)</button></li>
+                    <li><button class="selectos__content_filterbtn" onclick="selectos_btn()">All(13)</button></li>
+                </ul>
+                <div class="selectos__content_version">
+                    <div class="selectos__content_version-content1">
+                        <div class="selectos__content_version-pills">Lincensed</div>
+                        <h3 class="selectos__content_version-content1_heading">Windows</h3>
+                        <h4 class="selectos__content_version-content1_subheading">os version</h4>
+                        <select name="osversion_content1" id="osversion_content1" class="selectos__content_version-selectversion">
+                            <option value="redhatlinux8">RedHat Enterprise Linux8 </option>
+                            <option value="redhatlinux8">RedHat Enterprise Linux8 </option>
+                            <option value="redhatlinux8">RedHat Enterprise Linux8 </option>
+                        </select>
+                    </div>
+                    <div class="selectos__content_version-content2">
+                        <div class="selectos__content_version-pills">Lincensed</div>
+                        <h3 class="selectos__content_version-content2_heading">Windows</h3>
+                        <h4 class="selectos__content_version-content2_subheading">os version</h4>
+                        <select name="osversion_content2" id="osversion_content2" class="selectos__content_version-selectversion">
+                            <option value="redhatlinux8">RedHat Enterprise Linux8 </option>
+                            <option value="redhatlinux8">RedHat Enterprise Linux8 </option>
+                            <option value="redhatlinux8">RedHat Enterprise Linux8 </option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Custom Javascript -->
+    <script src="../js/vmx_script.js"></script>
+</body>
+</html>

@@ -16,88 +16,58 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <div class="register_body">
-        <div class="register_div container">
-            <img src="./images/logo.svg" alt="logo" class="logo_img">
-            <div class="register_div__form">
-                <form action="#">
-                    <label for="email" class="ff_montserrat-medium text_color">Email Address</label>
-                    <input type="email" name="email_id" id="user_email" placeholder="email@domain.com" class="ff_montserrat-medium" required>
-                    <button type="submit" class="btn_bg ff_montserrat-medium">Submit</button>
-                    <div>
-                        <a href="#" class="text_color ff_montserrat-medium">forgot password?</a>
-                        <a href="#" class="text_color ff_montserrat-medium">Register here</a>
-                    </div>
-                </form>
+    <div class="contact">
+        <div class="container">
+        <img src="./images/logo.svg" alt="logo" class="logo_img">
+            <div class="contact__block">
+                <div class="contact__block-left">
+                    <form action="#" class="contact__form">
+                        <label for="email" class="contact__form-label">Email Address</label>
+                        <input type="email" class="contact__form-field" name="email_id" id="user_email" placeholder="email@domain.com" required>
+                        <button type="submit" class="contact__form-submitbtn">Submit</button>
+                        <div class="contact__form-anchorblock">
+                            <a href="#" class="contact__form-anchorblock-text">forgot password?</a>
+                            <a href="#" class="contact__form-anchorblock-text">Register here</a>
+                        </div>
+                    </form>
+                </div>
+                <img src="./images/server.svg" alt="server" class="contact__block-right">
             </div>
-            <img src="./images/server.svg" alt="server" class="register_div_img">
         </div>
-        <p>Country</p>
     </div>
 
-    <div class="os_body">
-        <div class="os_div container">
+    <!-- Select country start -->
+    <div class="country">
+        <div class="country__block container">
             <img src="./images/logo.svg" alt="logo" class="logo_img">
-            <div class="os_div_slider_body">
-                <h3 class="text_color ff_montserrat-medium">Select Country</h3>
-                <div class="owl-carousel slide_1 owl-theme">
+            <div class="country__sliderwrappper">
+                <h3 class="country__sliderwrappper-heading">Select Country</h3>
+                <div class="owl-carousel country__slider owl-theme">
                     <div class="slide slide1">
-                        <div class="content">
-                            <div class="group_1">
-                                <a href="#"class="group_1_div1">
-                                    <img src="./images/netherlands_flag.png" alt="netherlands_flag" class="group_1_div1_bgimg1">
-                                    <p class="ff_montserrat-medium group_1_div1_p">Amsterdam</p>
+                        <div class="slider-content">
+                            <div class="slider-content__group">
+                                <a href="#"class="group1-content">
+                                    <img src="./images/netherlands_flag.png" alt="netherlands_flag" class="flagimg-netherland">
+                                    <p class="group1-content__para">Amsterdam</p>
                                     <div class="overlay">
-                                        <div class="overlay_div">
-                                            <img src="./images/amsterdam.png" alt="amsterdam" class="group_1_div1_bgimg">
-                                            <div>
-                                                <img src="./images/icons-netherlands-48.png" alt="icons-netherlands-48" class="group_1_div1_flagimg">
-                                                <p class="ff_montserrat-medium overlay_div_p">Amsterdam</p>
+                                        <div class="overlay__wrapper">
+                                            <img src="./images/amsterdam.png" alt="amsterdam" class="overlay__backimg">
+                                            <div class="overlay__box">
+                                                <img src="./images/icons-netherlands-48.png" alt="icons-netherlands-48" class="flagimg">
+                                                <p class="overlay__box-para">Amsterdam</p>
                                             </div>
                                         </div>
                                     </div>
                                 </a>
-                                <a href="#"class="group_1_div2">
-                                    <img src="./images/icons8-france-48.svg" alt="icons8-france-48" class="group_1_div2_bgimg">
-                                    <p class="ff_montserrat-medium group_1_div2_p">Paris</p>
+                                <a href="#"class="group2-content">
+                                    <img src="./images/icons8-france-48.svg" alt="icons8-france-48" class="overlay__backimg">
+                                    <p class="group_1_div2_p">Paris</p>
                                     <div class="overlay">
-                                        <div class="overlay_div">
-                                            <img src="./images/amsterdam.png" alt="amsterdam" class="group_1_div2_bgimg">
-                                            <div>
-                                                <img src="./images/icons-netherlands-48.png" alt="icons-netherlands-48" class="group_1_div2_flagimg">
-                                                <p class="ff_montserrat-medium overlay_div_p">Amsterdam</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <div class="content">
-                            <div class="group_1">
-                                <a href="#"class="group_1_div1">
-                                    <img src="./images/icons8-usa-48.svg" alt="icons8-usa-48" class="group_1_div1_bgimg">
-                                    <p class="ff_montserrat-medium group_1_div1_p">Chicago</p>
-                                    <div class="overlay">
-                                        <div class="overlay_div">
-                                            <img src="./images/amsterdam.png" alt="amsterdam" class="group_1_div1_bgimg">
-                                            <div>
-                                                <img src="./images/icons-netherlands-48.png" alt="icons-netherlands-48" class="group_1_div1_flagimg">
-                                                <p class="ff_montserrat-medium overlay_div_p">Amsterdam</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a href="#"class="group_1_div2">
-                                    <img src="./images/canada.svg" alt="canada" class="group_1_div2_bgimg">
-                                    <p class="ff_montserrat-medium group_1_div2_p">Canada</p>
-                                    <div class="overlay">
-                                        <div class="overlay_div">
-                                            <img src="./images/amsterdam.png" alt="amsterdam" class="group_1_div2_bgimg">
-                                            <div>
-                                                <img src="./images/icons-netherlands-48.png" alt="icons-netherlands-48" class="group_1_div2_flagimg">
-                                                <p class="ff_montserrat-medium overlay_div_p">Amsterdam</p>
+                                        <div class="overlay__wrapper">
+                                            <img src="./images/amsterdam.png" alt="amsterdam" class="overlay__backimg">
+                                            <div class="overlay__box"> 
+                                                <img src="./images/icons-netherlands-48.png" alt="icons-netherlands-48" class="flagimg">
+                                                <p class="overlay__box-para">Paris</p>
                                             </div>
                                         </div>
                                     </div>
@@ -106,30 +76,30 @@
                         </div>
                     </div>
                     <div class="slide">
-                        <div class="content">
-                            <div class="group_1">
-                                <a href="#"class="group_1_div1">
-                                    <img src="./images/icons8-usa-48.svg" alt="icons8-usa-48" class="group_1_div1_bgimg">
-                                    <p class="ff_montserrat-medium group_1_div1_p">Dallas</p>
+                        <div class="slider-content">
+                            <div class="slider-content__group">
+                                <a href="#"class="group1-content">
+                                    <img src="./images/icons8-usa-48.svg" alt="icons8-usa-48" class="overlay__backimg">
+                                    <p class="group1-content__para">Chicago</p>
                                     <div class="overlay">
-                                        <div class="overlay_div">
-                                            <img src="./images/amsterdam.png" alt="amsterdam" class="group_1_div1_bgimg">
-                                            <div>
-                                                <img src="./images/icons-netherlands-48.png" alt="icons-netherlands-48" class="group_1_div1_flagimg">
-                                                <p class="ff_montserrat-medium overlay_div_p">Amsterdam</p>
+                                        <div class="overlay__wrapper">
+                                            <img src="./images/amsterdam.png" alt="amsterdam" class="overlay__backimg">
+                                            <div class="overlay__box">
+                                                <img src="./images/icons-netherlands-48.png" alt="icons-netherlands-48" class="flagimg">
+                                                <p class="overlay__box-para">Chicago</p>
                                             </div>
                                         </div>
                                     </div>
                                 </a>
-                                <a href="#"class="group_1_div2">
-                                    <img src="./images/sf-flag.svg" alt="sf-flag" class="group_1_div2_bgimg sf-flag">
-                                    <p class="ff_montserrat-medium group_1_div2_p">Capetown</p>
+                                <a href="#"class="group2-content">
+                                    <img src="./images/canada.svg" alt="canada" class="overlay__backimg">
+                                    <p class="group_1_div2_p">Canada</p>
                                     <div class="overlay">
-                                        <div class="overlay_div">
-                                            <img src="./images/amsterdam.png" alt="amsterdam" class="group_1_div2_bgimg">
-                                            <div>
-                                                <img src="./images/icons-netherlands-48.png" alt="icons-netherlands-48" class="group_1_div2_flagimg">
-                                                <p class="ff_montserrat-medium overlay_div_p">Amsterdam</p>
+                                        <div class="overlay__wrapper">
+                                            <img src="./images/amsterdam.png" alt="amsterdam" class="overlay__backimg">
+                                            <div class="overlay__box">
+                                                <img src="./images/icons-netherlands-48.png" alt="icons-netherlands-48" class="flagimg">
+                                                <p class="overlay__box-para">Canada</p>
                                             </div>
                                         </div>
                                     </div>
@@ -138,30 +108,62 @@
                         </div>
                     </div>
                     <div class="slide">
-                        <div class="content">
-                            <div class="group_1">
-                                <a href="#"class="group_1_div1">
-                                    <img src="./images/icons8-germany-48.svg" alt="icons8-germany-48" class="group_1_div1_bgimg">
-                                    <p class="ff_montserrat-medium group_1_div1_p">Frankfurt</p>
+                        <div class="slider-content">
+                            <div class="slider-content__group">
+                                <a href="#"class="group1-content">
+                                    <img src="./images/icons8-usa-48.svg" alt="icons8-usa-48" class="overlay__backimg">
+                                    <p class="group1-content__para">Dallas</p>
                                     <div class="overlay">
-                                        <div class="overlay_div">
-                                            <img src="./images/amsterdam.png" alt="amsterdam" class="group_1_div1_bgimg">
-                                            <div>
-                                                <img src="./images/icons-netherlands-48.png" alt="icons-netherlands-48" class="group_1_div1_flagimg">
-                                                <p class="ff_montserrat-medium overlay_div_p">Amsterdam</p>
+                                        <div class="overlay__wrapper">
+                                            <img src="./images/amsterdam.png" alt="amsterdam" class="overlay__backimg">
+                                            <div class="overlay__box">
+                                                <img src="./images/icons-netherlands-48.png" alt="icons-netherlands-48" class="flagimg">
+                                                <p class="overlay__box-para">Dallas</p>
                                             </div>
                                         </div>
                                     </div>
                                 </a>
-                                <a href="#"class="group_1_div2">
-                                    <img src="./images/brazil.svg" alt="brazil" class="group_1_div2_bgimg brazil_img">
-                                    <p class="ff_montserrat-medium group_1_div2_p">Brazil</p>
+                                <a href="#"class="group2-content">
+                                    <img src="./images/sf-flag.svg" alt="sf-flag" class="overlay__backimg sf-flag">
+                                    <p class="group_1_div2_p">Capetown</p>
                                     <div class="overlay">
-                                        <div class="overlay_div">
-                                            <img src="./images/amsterdam.png" alt="amsterdam" class="group_1_div2_bgimg">
-                                            <div>
-                                                <img src="./images/icons-netherlands-48.png" alt="icons-netherlands-48" class="group_1_div2_flagimg">
-                                                <p class="ff_montserrat-medium overlay_div_p">Amsterdam</p>
+                                        <div class="overlay__wrapper">
+                                            <img src="./images/amsterdam.png" alt="amsterdam" class="overlay__backimg">
+                                            <div class="overlay__box">
+                                                <img src="./images/icons-netherlands-48.png" alt="icons-netherlands-48" class="flagimg">
+                                                <p class="overlay__box-para">Capetown</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slider-content">
+                            <div class="slider-content__group">
+                                <a href="#"class="group1-content">
+                                    <img src="./images/icons8-germany-48.svg" alt="icons8-germany-48" class="overlay__backimg">
+                                    <p class="group1-content__para">Frankfurt</p>
+                                    <div class="overlay">
+                                        <div class="overlay__wrapper">
+                                            <img src="./images/amsterdam.png" alt="amsterdam" class="overlay__backimg">
+                                            <div class="overlay__box">
+                                                <img src="./images/icons-netherlands-48.png" alt="icons-netherlands-48" class="flagimg">
+                                                <p class="overlay__box-para">Frankfurt</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#"class="group2-content">
+                                    <img src="./images/brazil.svg" alt="brazil" class="overlay__backimg brazil_img">
+                                    <p class="group_1_div2_p">Brazil</p>
+                                    <div class="overlay">
+                                        <div class="overlay__wrapper">
+                                            <img src="./images/amsterdam.png" alt="amsterdam" class="overlay__backimg">
+                                            <div class="overlay__box">
+                                                <img src="./images/icons-netherlands-48.png" alt="icons-netherlands-48" class="flagimg">
+                                                <p class="overlay__box-para">Brazil</p>
                                             </div>
                                         </div>
                                     </div>
@@ -170,30 +172,30 @@
                         </div>
                     </div>
                     <div class="slide slide5">
-                        <div class="content">
-                            <div class="group_1">
-                                <a href="#"class="group_1_div1">
-                                    <img src="./images/icons8-kong-64.svg" alt="icons8-kong-64" class="group_1_div1_bgimg">
-                                    <p class="ff_montserrat-medium group_1_div1_p">Hong Kong</p>
+                        <div class="slider-content">
+                            <div class="slider-content__group">
+                                <a href="#"class="group1-content">
+                                    <img src="./images/icons8-kong-64.svg" alt="icons8-kong-64" class="overlay__backimg">
+                                    <p class="group1-content__para">Hong Kong</p>
                                     <div class="overlay">
-                                        <div class="overlay_div">
-                                            <img src="./images/amsterdam.png" alt="amsterdam" class="group_1_div1_bgimg">
-                                            <div>
-                                                <img src="./images/icons-netherlands-48.png" alt="icons-netherlands-48" class="group_1_div1_flagimg">
-                                                <p class="ff_montserrat-medium overlay_div_p">Amsterdam</p>
+                                        <div class="overlay__wrapper">
+                                            <img src="./images/amsterdam.png" alt="amsterdam" class="overlay__backimg">
+                                            <div class="overlay__box">
+                                                <img src="./images/icons-netherlands-48.png" alt="icons-netherlands-48" class="flagimg">
+                                                <p class="overlay__box-para">Hong Kong</p>
                                             </div>
                                         </div>
                                     </div>
                                 </a>
-                                <a href="#"class="group_1_div2">
-                                    <img src="./images/austallia.svg" alt="austallia" class="group_1_div2_bgimg brazil_img">
-                                    <p class="ff_montserrat-medium group_1_div2_p">Australia</p>
+                                <a href="#"class="group2-content">
+                                    <img src="./images/austallia.svg" alt="austallia" class="overlay__backimg brazil_img">
+                                    <p class="group_1_div2_p">Australia</p>
                                     <div class="overlay">
-                                        <div class="overlay_div">
-                                            <img src="./images/amsterdam.png" alt="amsterdam" class="group_1_div2_bgimg">
-                                            <div>
-                                                <img src="./images/icons-netherlands-48.png" alt="icons-netherlands-48" class="group_1_div2_flagimg">
-                                                <p class="ff_montserrat-medium overlay_div_p">Amsterdam</p>
+                                        <div class="overlay__wrapper">
+                                            <img src="./images/amsterdam.png" alt="amsterdam" class="overlay__backimg">
+                                            <div class="overlay__box">
+                                                <img src="./images/icons-netherlands-48.png" alt="icons-netherlands-48" class="flagimg">
+                                                <p class="overlay__box-para">Australia</p>
                                             </div>
                                         </div>
                                     </div>
@@ -204,62 +206,30 @@
 
                     <!-- Extra added -->
                     <div class="slide">
-                        <div class="content">
-                            <div class="group_1">
-                                <a href="#"class="group_1_div1">
-                                    <img src="./images/netherlands_flag.png" alt="netherlands_flag" class="group_1_div1_bgimg1">
-                                    <p class="ff_montserrat-medium group_1_div1_p">Amsterdam</p>
+                        <div class="slider-content">
+                            <div class="slider-content__group">
+                                <a href="#"class="group1-content">
+                                    <img src="./images/netherlands_flag.png" alt="netherlands_flag" class="flagimg-netherland">
+                                    <p class="group1-content__para">Amsterdam</p>
                                     <div class="overlay">
-                                        <div class="overlay_div">
-                                            <img src="./images/amsterdam.png" alt="amsterdam" class="group_1_div1_bgimg">
-                                            <div>
-                                                <img src="./images/icons-netherlands-48.png" alt="icons-netherlands-48" class="group_1_div1_flagimg">
-                                                <p class="ff_montserrat-medium overlay_div_p">Amsterdam</p>
+                                        <div class="overlay__wrapper">
+                                            <img src="./images/amsterdam.png" alt="amsterdam" class="overlay__backimg">
+                                            <div class="overlay__box">
+                                                <img src="./images/icons-netherlands-48.png" alt="icons-netherlands-48" class="flagimg">
+                                                <p class="overlay__box-para">Amsterdam</p>
                                             </div>
                                         </div>
                                     </div>
                                 </a>
-                                <a href="#"class="group_1_div2">
-                                    <img src="./images/icons8-france-48.svg" alt="icons8-france-48" class="group_1_div2_bgimg">
-                                    <p class="ff_montserrat-medium group_1_div2_p">Paris</p>
+                                <a href="#"class="group2-content">
+                                    <img src="./images/icons8-france-48.svg" alt="icons8-france-48" class="overlay__backimg">
+                                    <p class="group_1_div2_p">Paris</p>
                                     <div class="overlay">
-                                        <div class="overlay_div">
-                                            <img src="./images/amsterdam.png" alt="amsterdam" class="group_1_div2_bgimg">
-                                            <div>
-                                                <img src="./images/icons-netherlands-48.png" alt="icons-netherlands-48" class="group_1_div2_flagimg">
-                                                <p class="ff_montserrat-medium overlay_div_p">Amsterdam</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <div class="content">
-                            <div class="group_1">
-                                <a href="#"class="group_1_div1">
-                                    <img src="./images/icons8-usa-48.svg" alt="icons8-usa-48" class="group_1_div1_bgimg">
-                                    <p class="ff_montserrat-medium group_1_div1_p">Chicago</p>
-                                    <div class="overlay">
-                                        <div class="overlay_div">
-                                            <img src="./images/amsterdam.png" alt="amsterdam" class="group_1_div1_bgimg">
-                                            <div>
-                                                <img src="./images/icons-netherlands-48.png" alt="icons-netherlands-48" class="group_1_div1_flagimg">
-                                                <p class="ff_montserrat-medium overlay_div_p">Amsterdam</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a href="#"class="group_1_div2">
-                                    <img src="./images/canada.svg" alt="canada" class="group_1_div2_bgimg">
-                                    <p class="ff_montserrat-medium group_1_div2_p">Canada</p>
-                                    <div class="overlay">
-                                        <div class="overlay_div">
-                                            <img src="./images/amsterdam.png" alt="amsterdam" class="group_1_div2_bgimg">
-                                            <div>
-                                                <img src="./images/icons-netherlands-48.png" alt="icons-netherlands-48" class="group_1_div2_flagimg">
-                                                <p class="ff_montserrat-medium overlay_div_p">Amsterdam</p>
+                                        <div class="overlay__wrapper">
+                                            <img src="./images/amsterdam.png" alt="amsterdam" class="overlay__backimg">
+                                            <div class="overlay__box">
+                                                <img src="./images/icons-netherlands-48.png" alt="icons-netherlands-48" class="flagimg">
+                                                <p class="overlay__box-para">Paris</p>
                                             </div>
                                         </div>
                                     </div>
@@ -268,30 +238,30 @@
                         </div>
                     </div>
                     <div class="slide">
-                        <div class="content">
-                            <div class="group_1">
-                                <a href="#"class="group_1_div1">
-                                    <img src="./images/icons8-usa-48.svg" alt="icons8-usa-48" class="group_1_div1_bgimg">
-                                    <p class="ff_montserrat-medium group_1_div1_p">Dallas</p>
+                        <div class="slider-content">
+                            <div class="slider-content__group">
+                                <a href="#"class="group1-content">
+                                    <img src="./images/icons8-usa-48.svg" alt="icons8-usa-48" class="overlay__backimg">
+                                    <p class="group1-content__para">Chicago</p>
                                     <div class="overlay">
-                                        <div class="overlay_div">
-                                            <img src="./images/amsterdam.png" alt="amsterdam" class="group_1_div1_bgimg">
-                                            <div>
-                                                <img src="./images/icons-netherlands-48.png" alt="icons-netherlands-48" class="group_1_div1_flagimg">
-                                                <p class="ff_montserrat-medium overlay_div_p">Amsterdam</p>
+                                        <div class="overlay__wrapper">
+                                            <img src="./images/amsterdam.png" alt="amsterdam" class="overlay__backimg">
+                                            <div class="overlay__box">
+                                                <img src="./images/icons-netherlands-48.png" alt="icons-netherlands-48" class="flagimg">
+                                                <p class="overlay__box-para">Chicago</p>
                                             </div>
                                         </div>
                                     </div>
                                 </a>
-                                <a href="#"class="group_1_div2">
-                                    <img src="./images/sf-flag.svg" alt="sf-flag" class="group_1_div2_bgimg sf-flag">
-                                    <p class="ff_montserrat-medium group_1_div2_p">Capetown</p>
+                                <a href="#"class="group2-content">
+                                    <img src="./images/canada.svg" alt="canada" class="overlay__backimg">
+                                    <p class="group_1_div2_p">Canada</p>
                                     <div class="overlay">
-                                        <div class="overlay_div">
-                                            <img src="./images/amsterdam.png" alt="amsterdam" class="group_1_div2_bgimg">
-                                            <div>
-                                                <img src="./images/icons-netherlands-48.png" alt="icons-netherlands-48" class="group_1_div2_flagimg">
-                                                <p class="ff_montserrat-medium overlay_div_p">Amsterdam</p>
+                                        <div class="overlay__wrapper">
+                                            <img src="./images/amsterdam.png" alt="amsterdam" class="overlay__backimg">
+                                            <div class="overlay__box">
+                                                <img src="./images/icons-netherlands-48.png" alt="icons-netherlands-48" class="flagimg">
+                                                <p class="overlay__box-para">Canada</p>
                                             </div>
                                         </div>
                                     </div>
@@ -300,30 +270,62 @@
                         </div>
                     </div>
                     <div class="slide">
-                        <div class="content">
-                            <div class="group_1">
-                                <a href="#"class="group_1_div1">
-                                    <img src="./images/icons8-germany-48.svg" alt="icons8-germany-48" class="group_1_div1_bgimg">
-                                    <p class="ff_montserrat-medium group_1_div1_p">Frankfurt</p>
+                        <div class="slider-content">
+                            <div class="slider-content__group">
+                                <a href="#"class="group1-content">
+                                    <img src="./images/icons8-usa-48.svg" alt="icons8-usa-48" class="overlay__backimg">
+                                    <p class="group1-content__para">Dallas</p>
                                     <div class="overlay">
-                                        <div class="overlay_div">
-                                            <img src="./images/amsterdam.png" alt="amsterdam" class="group_1_div1_bgimg">
-                                            <div>
-                                                <img src="./images/icons-netherlands-48.png" alt="icons-netherlands-48" class="group_1_div1_flagimg">
-                                                <p class="ff_montserrat-medium overlay_div_p">Amsterdam</p>
+                                        <div class="overlay__wrapper">
+                                            <img src="./images/amsterdam.png" alt="amsterdam" class="overlay__backimg">
+                                            <div class="overlay__box">
+                                                <img src="./images/icons-netherlands-48.png" alt="icons-netherlands-48" class="flagimg">
+                                                <p class="overlay__box-para">Dallas</p>
                                             </div>
                                         </div>
                                     </div>
                                 </a>
-                                <a href="#"class="group_1_div2">
-                                    <img src="./images/brazil.svg" alt="brazil" class="group_1_div2_bgimg brazil_img">
-                                    <p class="ff_montserrat-medium group_1_div2_p">Brazil</p>
+                                <a href="#"class="group2-content">
+                                    <img src="./images/sf-flag.svg" alt="sf-flag" class="overlay__backimg sf-flag">
+                                    <p class="group_1_div2_p">Capetown</p>
                                     <div class="overlay">
-                                        <div class="overlay_div">
-                                            <img src="./images/amsterdam.png" alt="amsterdam" class="group_1_div2_bgimg">
-                                            <div>
-                                                <img src="./images/icons-netherlands-48.png" alt="icons-netherlands-48" class="group_1_div2_flagimg">
-                                                <p class="ff_montserrat-medium overlay_div_p">Amsterdam</p>
+                                        <div class="overlay__wrapper">
+                                            <img src="./images/amsterdam.png" alt="amsterdam" class="overlay__backimg">
+                                            <div class="overlay__box">
+                                                <img src="./images/icons-netherlands-48.png" alt="icons-netherlands-48" class="flagimg">
+                                                <p class="overlay__box-para">Capetown</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slider-content">
+                            <div class="slider-content__group">
+                                <a href="#"class="group1-content">
+                                    <img src="./images/icons8-germany-48.svg" alt="icons8-germany-48" class="overlay__backimg">
+                                    <p class="group1-content__para">Frankfurt</p>
+                                    <div class="overlay">
+                                        <div class="overlay__wrapper">
+                                            <img src="./images/amsterdam.png" alt="amsterdam" class="overlay__backimg">
+                                            <div class="overlay__box">
+                                                <img src="./images/icons-netherlands-48.png" alt="icons-netherlands-48" class="flagimg">
+                                                <p class="overlay__box-para">Frankfurt</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#"class="group2-content">
+                                    <img src="./images/brazil.svg" alt="brazil" class="overlay__backimg brazil_img">
+                                    <p class="group_1_div2_p">Brazil</p>
+                                    <div class="overlay">
+                                        <div class="overlay__wrapper">
+                                            <img src="./images/amsterdam.png" alt="amsterdam" class="overlay__backimg">
+                                            <div class="overlay__box">
+                                                <img src="./images/icons-netherlands-48.png" alt="icons-netherlands-48" class="flagimg">
+                                                <p class="overlay__box-para">Brazil</p>
                                             </div>
                                         </div>
                                     </div>
@@ -332,30 +334,30 @@
                         </div>
                     </div>
                     <div class="slide slide5">
-                        <div class="content">
-                            <div class="group_1">
-                                <a href="#"class="group_1_div1">
-                                    <img src="./images/icons8-kong-64.svg" alt="icons8-kong-64" class="group_1_div1_bgimg">
-                                    <p class="ff_montserrat-medium group_1_div1_p">Hong Kong</p>
+                        <div class="slider-content">
+                            <div class="slider-content__group">
+                                <a href="#"class="group1-content">
+                                    <img src="./images/icons8-kong-64.svg" alt="icons8-kong-64" class="overlay__backimg">
+                                    <p class="group1-content__para">Hong Kong</p>
                                     <div class="overlay">
-                                        <div class="overlay_div">
-                                            <img src="./images/amsterdam.png" alt="amsterdam" class="group_1_div1_bgimg">
-                                            <div>
-                                                <img src="./images/icons-netherlands-48.png" alt="icons-netherlands-48" class="group_1_div1_flagimg">
-                                                <p class="ff_montserrat-medium overlay_div_p">Amsterdam</p>
+                                        <div class="overlay__wrapper">
+                                            <img src="./images/amsterdam.png" alt="amsterdam" class="overlay__backimg">
+                                            <div class="overlay__box">
+                                                <img src="./images/icons-netherlands-48.png" alt="icons-netherlands-48" class="flagimg">
+                                                <p class="overlay__box-para">Hong Kong</p>
                                             </div>
                                         </div>
                                     </div>
                                 </a>
-                                <a href="#"class="group_1_div2">
-                                    <img src="./images/austallia.svg" alt="austallia" class="group_1_div2_bgimg brazil_img">
-                                    <p class="ff_montserrat-medium group_1_div2_p">Australia</p>
+                                <a href="#"class="group2-content">
+                                    <img src="./images/austallia.svg" alt="austallia" class="overlay__backimg brazil_img">
+                                    <p class="group_1_div2_p">Australia</p>
                                     <div class="overlay">
-                                        <div class="overlay_div">
-                                            <img src="./images/amsterdam.png" alt="amsterdam" class="group_1_div2_bgimg">
-                                            <div>
-                                                <img src="./images/icons-netherlands-48.png" alt="icons-netherlands-48" class="group_1_div2_flagimg">
-                                                <p class="ff_montserrat-medium overlay_div_p">Amsterdam</p>
+                                        <div class="overlay__wrapper">
+                                            <img src="./images/amsterdam.png" alt="amsterdam" class="overlay__backimg">
+                                            <div class="overlay__box">
+                                                <img src="./images/icons-netherlands-48.png" alt="icons-netherlands-48" class="flagimg">
+                                                <p class="overlay__box-para">Australia</p>
                                             </div>
                                         </div>
                                     </div>
@@ -366,184 +368,186 @@
                 </div>
             </div>
             <!-- nav arrow -->
-            <div class="os_div_next">
+            <div class="country-slider-nextarrow">
                 <span class="fa fa-angle-right"></span>
             </div>
-            <div class="os_div_prev">
+            <div class="country-slider-prevarrow">
                 <span class="fa fa-angle-left"></span>
             </div>
         </div>
-        <p class="os_body_p">OS</p>
     </div>
+    <!-- Select country end -->
 
-    <div class="selectos">
-        <div class="selectos_container container">
+    <!-- OS div start -->
+    <div class="os">
+        <div class="os__block container">
             <img src="./images/logo.svg" alt="logo" class="logo_img">
-            <div class="selectos_content">
-                <h2 class="selectos_content_h2">Select Your Operating System</h2>
-                <ul class="selectos_content_ul">
-                    <li><button class="selectos_content_button" onclick="selectos_btn()">Popular(4)</button></li>
-                    <li><button class="selectos_content_button" onclick="selectos_btn()">For Containers</button></li>
-                    <li><button class="selectos_content_button" onclick="selectos_btn()">VMWare/ESXi(1)</button></li>
-                    <li><button class="selectos_content_button" onclick="selectos_btn()">Licensed(2)</button></li>
-                    <li><button class="selectos_content_button-all" id="active_btn" onclick="selectos_btn_all()">All(11)</button></li>
+            <div class="os__content">
+                <h2 class="os__content_h2">Select Your Operating System</h2>
+                <ul class="os__content_filter-list">
+                    <li><button class="os__content_filterbtn" onclick="os_btn()">Popular(4)</button></li>
+                    <li><button class="os__content_filterbtn" onclick="os_btn()">For Containers</button></li>
+                    <li><button class="os__content_filterbtn" onclick="os_btn()">VMWare/ESXi(1)</button></li>
+                    <li><button class="os__content_filterbtn" onclick="os_btn()">Licensed(2)</button></li>
+                    <li><button class="os__content_filterbtn--all" id="active_btn" onclick="os_btn_all()">All(11)</button></li>
                 </ul>
                 <!-- Carousel code start -->
-                <div class="owl-carousel slide_2">
-                    <div class="slide_2_slide slide2_1">
-                        <div class="slide_2_content">
-                            <img src="./images/Aima.png" alt="aima_logo" class="slide_2_content_img" id="aima_img">
-                            <div class="slide_2_content_description">
-                                <h2 class="slide_2_content_description_h2">Aima</h2>
-                                <div class="slide_2_content_description_hr"></div>
-                                <p class="slide_2_content_description_p1">Version</p>
-                                <p class="slide_2_content_description_p2">AimaLinux OS 8</p>
+                <div class="owl-carousel os__slider">
+                    <div class="os__sliderwrapper os__sliderwrapper_active">
+                        <div class="os__slider_content">
+                            <img src="./images/Aima.png" alt="aima_logo" class="os__slider_logoimg" id="aima_img">
+                            <div class="os__slider_description">
+                                <h2 class="os__slider_heading">Aima</h2>
+                                <div class="os__slider_hrline"></div>
+                                <p class="os__slider_versionpara">Version</p>
+                                <p class="os__slider_ospara">AimaLinux OS 8</p>
                             </div>
                         </div>
                     </div>
-                    <div class="slide_2_slide">
-                        <div class="slide_2_content">
-                            <img src="./images/alpine_logo.svg" alt="alpine_logo" class="slide_2_content_img">
-                            <div class="slide_2_content_description">
-                                <h2 class="slide_2_content_description_h2">Alpine</h2>
-                                <div class="slide_2_content_description_hr"></div>
-                                <p class="slide_2_content_description_p1">Version</p>
-                                <p class="slide_2_content_description_p2">Alpine 3</p>
+                    <div class="os__sliderwrapper">
+                        <div class="os__slider_content">
+                            <img src="./images/alpine_logo.svg" alt="alpine_logo" class="os__slider_logoimg">
+                            <div class="os__slider_description">
+                                <h2 class="os__slider_heading">Alpine</h2>
+                                <div class="os__slider_hrline"></div>
+                                <p class="os__slider_versionpara">Version</p>
+                                <p class="os__slider_ospara">Alpine 3</p>
                             </div>
                         </div>
                     </div>
-                    <div class="slide_2_slide">
-                        <div class="slide_2_content">
-                            <img src="./images/centos_logo.svg" alt="centos_logo" class="slide_2_content_img">
-                            <div class="slide_2_content_description">
-                                <h2 class="slide_2_content_description_h2">CentOS</h2>
-                                <div class="slide_2_content_description_hr"></div>
-                                <p class="slide_2_content_description_p1">Version</p>
-                                <p class="slide_2_content_description_p2">CentOS 8</p>
+                    <div class="os__sliderwrapper">
+                        <div class="os__slider_content">
+                            <img src="./images/centos_logo.svg" alt="centos_logo" class="os__slider_logoimg">
+                            <div class="os__slider_description">
+                                <h2 class="os__slider_heading">CentOS</h2>
+                                <div class="os__slider_hrline"></div>
+                                <p class="os__slider_versionpara">Version</p>
+                                <p class="os__slider_ospara">CentOS 8</p>
                             </div>
                         </div>
                     </div>
-                    <div class="slide_2_slide">
-                        <div class="slide_2_content">
-                            <img src="./images/ipxe_logo.svg" alt="ipxe_logo" class="slide_2_content_ipxe-img">
-                            <div class="slide_2_content_description">
-                                <h2 class="slide_2_content_description_h2">Custom iPXE</h2>
-                                <div class="slide_2_content_description_hr"></div>
-                                <p class="slide_2_content_description_p1">Version</p>
-                                <p class="slide_2_content_description_p2">Custom iPXE</p>
+                    <div class="os__sliderwrapper">
+                        <div class="os__slider_content">
+                            <img src="./images/ipxe_logo.svg" alt="ipxe_logo" class="os__slider_logoimg--ipxe">
+                            <div class="os__slider_description">
+                                <h2 class="os__slider_heading">Custom iPXE</h2>
+                                <div class="os__slider_hrline"></div>
+                                <p class="os__slider_versionpara">Version</p>
+                                <p class="os__slider_ospara">Custom iPXE</p>
                             </div>
                         </div>
                     </div>
-                    <div class="slide_2_slide">
-                        <div class="slide_2_content">
-                            <img src="./images/ipxe_logo.svg" alt="ipxe_logo" class="slide_2_content_ipxe-img">
-                            <div class="slide_2_content_description">
-                                <h2 class="slide_2_content_description_h2">Custom iPXE</h2>
-                                <div class="slide_2_content_description_hr"></div>
-                                <p class="slide_2_content_description_p1">Version</p>
-                                <p class="slide_2_content_description_p2">Custom iPXE</p>
+                    <div class="os__sliderwrapper">
+                        <div class="os__slider_content">
+                            <img src="./images/ipxe_logo.svg" alt="ipxe_logo" class="os__slider_logoimg--ipxe">
+                            <div class="os__slider_description">
+                                <h2 class="os__slider_heading">Custom iPXE</h2>
+                                <div class="os__slider_hrline"></div>
+                                <p class="os__slider_versionpara">Version</p>
+                                <p class="os__slider_ospara">Custom iPXE</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="slide_2_slide">
-                        <div class="slide_2_content">
-                            <img src="./images/Aima.png" alt="aima_logo" class="slide_2_content_img" id="aima_img">
-                            <div class="slide_2_content_description">
-                                <h2 class="slide_2_content_description_h2">Aima</h2>
-                                <div class="slide_2_content_description_hr"></div>
-                                <p class="slide_2_content_description_p1">Version</p>
-                                <p class="slide_2_content_description_p2">AimaLinux OS 8</p>
+                    <div class="os__sliderwrapper">
+                        <div class="os__slider_content">
+                            <img src="./images/Aima.png" alt="aima_logo" class="os__slider_logoimg" id="aima_img">
+                            <div class="os__slider_description">
+                                <h2 class="os__slider_heading">Aima</h2>
+                                <div class="os__slider_hrline"></div>
+                                <p class="os__slider_versionpara">Version</p>
+                                <p class="os__slider_ospara">AimaLinux OS 8</p>
                             </div>
                         </div>
                     </div>
-                    <div class="slide_2_slide">
-                        <div class="slide_2_content">
-                            <img src="./images/alpine_logo.svg" alt="alpine_logo" class="slide_2_content_img">
-                            <div class="slide_2_content_description">
-                                <h2 class="slide_2_content_description_h2">Alpine</h2>
-                                <div class="slide_2_content_description_hr"></div>
-                                <p class="slide_2_content_description_p1">Version</p>
-                                <p class="slide_2_content_description_p2">Alpine 3</p>
+                    <div class="os__sliderwrapper">
+                        <div class="os__slider_content">
+                            <img src="./images/alpine_logo.svg" alt="alpine_logo" class="os__slider_logoimg">
+                            <div class="os__slider_description">
+                                <h2 class="os__slider_heading">Alpine</h2>
+                                <div class="os__slider_hrline"></div>
+                                <p class="os__slider_versionpara">Version</p>
+                                <p class="os__slider_ospara">Alpine 3</p>
                             </div>
                         </div>
                     </div>
-                    <div class="slide_2_slide">
-                        <div class="slide_2_content">
-                            <img src="./images/centos_logo.svg" alt="centos_logo" class="slide_2_content_img">
-                            <div class="slide_2_content_description">
-                                <h2 class="slide_2_content_description_h2">CentOS</h2>
-                                <div class="slide_2_content_description_hr"></div>
-                                <p class="slide_2_content_description_p1">Version</p>
-                                <p class="slide_2_content_description_p2">CentOS 8</p>
+                    <div class="os__sliderwrapper">
+                        <div class="os__slider_content">
+                            <img src="./images/centos_logo.svg" alt="centos_logo" class="os__slider_logoimg">
+                            <div class="os__slider_description">
+                                <h2 class="os__slider_heading">CentOS</h2>
+                                <div class="os__slider_hrline"></div>
+                                <p class="os__slider_versionpara">Version</p>
+                                <p class="os__slider_ospara">CentOS 8</p>
                             </div>
                         </div>
                     </div>
-                    <div class="slide_2_slide">
-                        <div class="slide_2_content">
-                            <img src="./images/ipxe_logo.svg" alt="ipxe_logo" class="slide_2_content_ipxe-img">
-                            <div class="slide_2_content_description">
-                                <h2 class="slide_2_content_description_h2">Custom iPXE</h2>
-                                <div class="slide_2_content_description_hr"></div>
-                                <p class="slide_2_content_description_p1">Version</p>
-                                <p class="slide_2_content_description_p2">Custom iPXE</p>
+                    <div class="os__sliderwrapper">
+                        <div class="os__slider_content">
+                            <img src="./images/ipxe_logo.svg" alt="ipxe_logo" class="os__slider_logoimg--ipxe">
+                            <div class="os__slider_description">
+                                <h2 class="os__slider_heading">Custom iPXE</h2>
+                                <div class="os__slider_hrline"></div>
+                                <p class="os__slider_versionpara">Version</p>
+                                <p class="os__slider_ospara">Custom iPXE</p>
                             </div>
                         </div>
                     </div>
-                    <div class="slide_2_slide">
-                        <div class="slide_2_content">
-                            <img src="./images/ipxe_logo.svg" alt="ipxe_logo" class="slide_2_content_ipxe-img">
-                            <div class="slide_2_content_description">
-                                <h2 class="slide_2_content_description_h2">Custom iPXE</h2>
-                                <div class="slide_2_content_description_hr"></div>
-                                <p class="slide_2_content_description_p1">Version</p>
-                                <p class="slide_2_content_description_p2">Custom iPXE</p>
+                    <div class="os__sliderwrapper">
+                        <div class="os__slider_content">
+                            <img src="./images/ipxe_logo.svg" alt="ipxe_logo" class="os__slider_logoimg--ipxe">
+                            <div class="os__slider_description">
+                                <h2 class="os__slider_heading">Custom iPXE</h2>
+                                <div class="os__slider_hrline"></div>
+                                <p class="os__slider_versionpara">Version</p>
+                                <p class="os__slider_ospara">Custom iPXE</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!-- Carousel code end -->
-                <p class="selectos_content_p">Selected : <span>Aima (AimaLinux OS 8)</span></p>
+                <p class="os__content_selectedos">Selected : <span>Aima (AimaLinux OS 8)</span></p>
             </div>
             <!-- nav arrow -->
-            <div class="selectos_div_next">
+            <div class="os__slider_nextarrow">
                 <span class="fa fa-angle-right"></span>
             </div>
-            <div class="selectos_div_prev">
+            <div class="os__slider_prevarrow">
                 <span class="fa fa-angle-left"></span>
             </div>
         </div>
     </div>
+    <!-- OS div end -->
 
-    <!-- Server div start -->
-    <div class="server">
-        <div class="server_container container">
-            <img src="./images/logo.svg" alt="logo" class="logo_img1">
-            <div class="server_content">
-                <h2 class="server_content_h2">Select Your Operating System</h2>
-                <ul class="server_content_ul">
-                    <li><button class="server_content_button" onclick="server_btn()">Popular(4)</button></li>
-                    <li><button class="server_content_button" onclick="server_btn()">For Containers</button></li>
-                    <li><button class="server_content_button" onclick="server_btn()">VMWare/ESXi(1)</button></li>
-                    <li><button class="server_content_button-all" id="active_btn2" onclick="server_btn_all()">Licensed(2)</button></li>
-                    <li><button class="server_content_button" onclick="server_btn()">All(13)</button></li>
+    <!-- Select OS div start -->
+    <div class="selectos">
+        <div class="selectos__block container">
+            <img src="./images/logo.svg" alt="logo" class="logo_img">
+            <div class="selectos__content">
+                <h2 class="selectos__content_heading">Select Your Operating System</h2>
+                <ul class="selectos__content_filter-list">
+                    <li><button class="selectos__content_filterbtn" onclick="selectos_btn()">Popular(4)</button></li>
+                    <li><button class="selectos__content_filterbtn" onclick="selectos_btn()">For Containers</button></li>
+                    <li><button class="selectos__content_filterbtn" onclick="selectos_btn()">VMWare/ESXi(1)</button></li>
+                    <li><button class="selectos__content_filterbtn--all" id="active_btn2" onclick="selectos_btn_all()">Licensed(2)</button></li>
+                    <li><button class="selectos__content_filterbtn" onclick="selectos_btn()">All(13)</button></li>
                 </ul>
-                <div class="server_content_version">
-                    <div class="server_content_version_content1">
-                        <div>Lincensed</div>
-                        <h3>Windows</h3>
-                        <h4>os version</h4>
-                        <select name="osversion_content1" id="osversion_content1">
+                <div class="selectos__content_version">
+                    <div class="selectos__content_version-content1">
+                        <div class="selectos__content_version-pills">Lincensed</div>
+                        <h3 class="selectos__content_version-content1_heading">Windows</h3>
+                        <h4 class="selectos__content_version-content1_subheading">os version</h4>
+                        <select name="osversion_content1" id="osversion_content1" class="selectos__content_version-selectversion">
                             <option value="redhatlinux8">RedHat Enterprise Linux8 </option>
                             <option value="redhatlinux8">RedHat Enterprise Linux8 </option>
                             <option value="redhatlinux8">RedHat Enterprise Linux8 </option>
                         </select>
                     </div>
-                    <div class="server_content_version_content2">
-                        <div>Lincensed</div>
-                        <h3>Windows</h3>
-                        <h4>os version</h4>
-                        <select name="osversion_content2" id="osversion_content2">
+                    <div class="selectos__content_version-content2">
+                        <div class="selectos__content_version-pills">Lincensed</div>
+                        <h3 class="selectos__content_version-content2_heading">Windows</h3>
+                        <h4 class="selectos__content_version-content2_subheading">os version</h4>
+                        <select name="osversion_content2" id="osversion_content2" class="selectos__content_version-selectversion">
                             <option value="redhatlinux8">RedHat Enterprise Linux8 </option>
                             <option value="redhatlinux8">RedHat Enterprise Linux8 </option>
                             <option value="redhatlinux8">RedHat Enterprise Linux8 </option>
@@ -553,23 +557,23 @@
             </div>
         </div>
     </div>
-    <!-- Server div end -->
+    <!-- Select OS div end -->
 
     <!-- Select server div start -->
-    <div class="selectserver">
-        <div class="selectserver_container container">
+    <div class="server">
+        <div class="server__block container">
             <img src="./images/logo.svg" alt="logo" class="logo_img1">
-            <div class="selectserver_content">
-                <h2 class="selectserver_content_h2">Select Your Server</h2>
+            <div class="server__content">
+                <h2 class="server__content_heading">Select Your Server</h2>
                 <!-- carousle code start -->
-                <div class="owl-carousel slide_3">
-                    <div class="slide_3_slide slide3_1">
-                        <div class="slide_3_content">
-                            <div class="slide_3_content_header">
-                                <h4>C3.small.X86</h4>
-                                <p>0.75/Hour</p>
+                <div class="owl-carousel server__slider">
+                    <div class="server__slide server__slide_active">
+                        <div class="server__slider_content">
+                            <div class="server__slider_header">
+                                <h4 class="server__slider_heading">C3.small.X86</h4>
+                                <p class="server__slider_subheading">0.75/Hour</p>
                             </div>
-                            <ul>
+                            <ul class="server__slider_list">
                                 <li>1x Intel(R) Xeon (R)</li>
                                 <li>3.40 GHZ</li>
                                 <li>2x 480 GB SSD</li>
@@ -578,13 +582,13 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="slide_3_slide">
-                        <div class="slide_3_content">
-                            <div class="slide_3_content_header">
-                                <h4>C3.small.X86</h4>
-                                <p>0.75/Hour</p>
+                    <div class="server__slide">
+                        <div class="server__slider_content">
+                            <div class="server__slider_header">
+                                <h4 class="server__slider_heading">C3.small.X86</h4>
+                                <p class="server__slider_subheading">0.75/Hour</p>
                             </div>
-                            <ul>
+                            <ul class="server__slider_list">
                                 <li>1x Intel(R) Xeon (R)</li>
                                 <li>3.40 GHZ</li>
                                 <li>2x 480 GB SSD</li>
@@ -593,13 +597,13 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="slide_3_slide">
-                        <div class="slide_3_content">
-                            <div class="slide_3_content_header">
-                                <h4>C3.small.X86</h4>
-                                <p>0.75/Hour</p>
+                    <div class="server__slide">
+                        <div class="server__slider_content">
+                            <div class="server__slider_header">
+                                <h4 class="server__slider_heading">C3.small.X86</h4>
+                                <p class="server__slider_subheading">0.75/Hour</p>
                             </div>
-                            <ul>
+                            <ul class="server__slider_list">
                                 <li>1x Intel(R) Xeon (R)</li>
                                 <li>3.40 GHZ</li>
                                 <li>2x 480 GB SSD</li>
@@ -608,13 +612,13 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="slide_3_slide">
-                        <div class="slide_3_content">
-                            <div class="slide_3_content_header">
-                                <h4>C3.small.X86</h4>
-                                <p>0.75/Hour</p>
+                    <div class="server__slide">
+                        <div class="server__slider_content">
+                            <div class="server__slider_header">
+                                <h4 class="server__slider_heading">C3.small.X86</h4>
+                                <p class="server__slider_subheading">0.75/Hour</p>
                             </div>
-                            <ul>
+                            <ul class="server__slider_list">
                                 <li>1x Intel(R) Xeon (R)</li>
                                 <li>3.40 GHZ</li>
                                 <li>2x 480 GB SSD</li>
@@ -623,13 +627,13 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="slide_3_slide">
-                        <div class="slide_3_content">
-                            <div class="slide_3_content_header">
-                                <h4>C3.small.X86</h4>
-                                <p>0.75/Hour</p>
+                    <div class="server__slide">
+                        <div class="server__slider_content">
+                            <div class="server__slider_header">
+                                <h4 class="server__slider_heading">C3.small.X86</h4>
+                                <p class="server__slider_subheading">0.75/Hour</p>
                             </div>
-                            <ul>
+                            <ul class="server__slider_list">
                                 <li>1x Intel(R) Xeon (R)</li>
                                 <li>3.40 GHZ</li>
                                 <li>2x 480 GB SSD</li>
@@ -638,13 +642,13 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="slide_3_slide">
-                        <div class="slide_3_content">
-                            <div class="slide_3_content_header">
-                                <h4>C3.small.X86</h4>
-                                <p>0.75/Hour</p>
+                    <div class="server__slide">
+                        <div class="server__slider_content">
+                            <div class="server__slider_header">
+                                <h4 class="server__slider_heading">C3.small.X86</h4>
+                                <p class="server__slider_subheading">0.75/Hour</p>
                             </div>
-                            <ul>
+                            <ul class="server__slider_list">
                                 <li>1x Intel(R) Xeon (R)</li>
                                 <li>3.40 GHZ</li>
                                 <li>2x 480 GB SSD</li>
@@ -653,13 +657,13 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="slide_3_slide">
-                        <div class="slide_3_content">
-                            <div class="slide_3_content_header">
-                                <h4>C3.small.X86</h4>
-                                <p>0.75/Hour</p>
+                    <div class="server__slide">
+                        <div class="server__slider_content">
+                            <div class="server__slider_header">
+                                <h4 class="server__slider_heading">C3.small.X86</h4>
+                                <p class="server__slider_subheading">0.75/Hour</p>
                             </div>
-                            <ul>
+                            <ul class="server__slider_list">
                                 <li>1x Intel(R) Xeon (R)</li>
                                 <li>3.40 GHZ</li>
                                 <li>2x 480 GB SSD</li>
@@ -668,13 +672,13 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="slide_3_slide">
-                        <div class="slide_3_content">
-                            <div class="slide_3_content_header">
-                                <h4>C3.small.X86</h4>
-                                <p>0.75/Hour</p>
+                    <div class="server__slide">
+                        <div class="server__slider_content">
+                            <div class="server__slider_header">
+                                <h4 class="server__slider_heading">C3.small.X86</h4>
+                                <p class="server__slider_subheading">0.75/Hour</p>
                             </div>
-                            <ul>
+                            <ul class="server__slider_list">
                                 <li>1x Intel(R) Xeon (R)</li>
                                 <li>3.40 GHZ</li>
                                 <li>2x 480 GB SSD</li>
@@ -685,12 +689,12 @@
                     </div>
                 </div> <!-- carousel code end -->
             </div>
-            <p class="selectserver_content_p">Selected : <span>Aima (AimaLinux OS 8)</span></p>
+            <p class="server__content_selectedserver">Selected : <span>Aima (AimaLinux OS 8)</span></p>
             <!-- nav arrow -->
-            <div class="selectserver_div_next">
+            <div class="server__slider_nextarrow">
                 <span class="fa fa-angle-right"></span>
             </div>
-            <div class="selectserver_div_prev">
+            <div class="server__slider_prevarrow">
                 <span class="fa fa-angle-left"></span>
             </div>
         </div>
@@ -699,94 +703,94 @@
 
     <!-- Plan div start -->
     <div class="plan">
-        <div class="plan_bgdiv">
-            <h2 class="plan_container_h2">Our Monthly & Hourly Plans For You</h2>
-            <div class="plan_container_hrdiv"></div>
-            <div class="plan_container_toggle">
+        <div class="plan__block1">
+            <h2 class="plan__block1_heading">Our Monthly & Hourly Plans For You</h2>
+            <div class="plan__block1_hrline"></div>
+            <div class="toggle-btn">
                 <div id="move"></div>
-                <div class="radio_btn1"><input type="radio" name="plan_btn" id="hourly_btn"><label for="hourly_btn" class="hourly_label">Hourly</label></div>
-                <div class="radio_btn2"><input type="radio" name="plan_btn" id="monthly_btn"><label for="monthly_btn" class="monthly_label">Monthly</label></div>
+                <div class="toggle-btn__radio_btn1"><input type="radio" name="plan_btn" id="hourly_btn"><label for="hourly_btn" class="hourly_label">Hourly</label></div>
+                <div class="toggle-btn__radio_btn2"><input type="radio" name="plan_btn" id="monthly_btn"><label for="monthly_btn" class="monthly_label">Monthly</label></div>
             </div>
         </div>
-        <div class="plan_container container">
-            <div class="plan_container_content">
-                <div class="plan_container_content_plan">
-                    <div>
-                        <h3>$ 200</h3>
-                        <h4>Starter Plan</h4>
+        <div class="plan__block2 container">
+            <div class="plan__block2_content">
+                <div class="starter-plan">
+                    <div class="starter-plan__header">
+                        <h3 class="starter-plan__header_heading">$ 200</h3>
+                        <h4 class="starter-plan__header_subheading">Starter Plan</h4>
                     </div>
-                    <ul>
+                    <ul class="starter-plan__list">
                         <li><i class="fa fa-check-circle fa-lg"></i> 3 Projects</li>
                         <li><i class="fa fa-check-circle fa-lg"></i> Server Access</li>
                         <li><i class="fa fa-times-circle fa-lg"></i> Operating System</li>
                     </ul>
-                    <p>Location - Dallas</p>
-                    <button>Get Started</button>
+                    <p class="starter-plan__location">Location - Dallas</p>
+                    <button class="starter-plan__startbtn">Get Started</button>
                 </div>
-                <div class="plan_container_content_plan active_plan">
-                    <div>
-                        <h3>$ 300</h3>
-                        <h4>Standard Plan</h4>
+                <div class="starter-plan active_plan">
+                    <div class="starter-plan__header">
+                        <h3 class="starter-plan__header_heading">$ 300</h3>
+                        <h4 class="starter-plan__header_subheading">Standard Plan</h4>
                     </div>
-                    <ul>
+                    <ul class="starter-plan__list">
                         <li><i class="fa fa-check-circle fa-lg"></i> 3 Projects</li>
                         <li><i class="fa fa-check-circle fa-lg"></i> Server Access</li>
                         <li><i class="fa fa-times-circle fa-lg"></i> Operating System</li>
                     </ul>
-                    <p>Location - Dallas</p>
-                    <button>Get Started</button>
+                    <p class="starter-plan__location">Location - Dallas</p>
+                    <button class="starter-plan__startbtn">Get Started</button>
                 </div>
-                <div class="plan_container_content_plan">
-                    <div>
-                        <h3>$ 200</h3>
-                        <h4>Starter Plan</h4>
+                <div class="starter-plan">
+                    <div class="starter-plan__header">
+                        <h3 class="starter-plan__header_heading">$ 200</h3>
+                        <h4 class="starter-plan__header_subheading">Starter Plan</h4>
                     </div>
-                    <ul>
+                    <ul class="starter-plan__list">
                         <li><i class="fa fa-check-circle fa-lg"></i> 3 Projects</li>
                         <li><i class="fa fa-check-circle fa-lg"></i> Server Access</li>
                         <li><i class="fa fa-check-circle fa-lg"></i> Operating System</li>
                     </ul>
-                    <p>Location - Dallas</p>
-                    <button>Get Started</button>
+                    <p class="starter-plan__location">Location - Dallas</p>
+                    <button class="starter-plan__startbtn">Get Started</button>
                 </div>
             </div>
             <!-- Monthly tab Content code start-->
-            <div class="plan_container_content_monthly">
-                <div class="plan_container_content_plan">
-                    <div>
-                        <h3>$ 100</h3>
-                        <h4>Starter Plan</h4>
+            <div class="plan__block2-content_monthly">
+                <div class="starter-plan">
+                    <div class="starter-plan__header">
+                        <h3 class="starter-plan__header_heading">$ 100</h3>
+                        <h4 class="starter-plan__header_subheading">Starter Plan</h4>
                     </div>
-                    <ul>
+                    <ul class="starter-plan__list">
                         <li><i class="fa fa-check-circle fa-lg"></i> 3 Projects</li>
                         <li><i class="fa fa-times-circle fa-lg"></i> Server Access</li>
                     </ul>
-                    <p>Location - Dallas</p>
-                    <button>Get Started</button>
+                    <p class="starter-plan__location">Location - Dallas</p>
+                    <button class="starter-plan__startbtn">Get Started</button>
                 </div>
-                <div class="plan_container_content_plan active_plan">
-                    <div>
-                        <h3>$ 200</h3>
-                        <h4>Standard Plan</h4>
+                <div class="starter-plan active_plan">
+                    <div class="starter-plan__header">
+                        <h3 class="starter-plan__header_heading">$ 200</h3>
+                        <h4 class="starter-plan__header_subheading">Standard Plan</h4>
                     </div>
-                    <ul>
+                    <ul class="starter-plan__list">
                         <li><i class="fa fa-check-circle fa-lg"></i> 3 Projects</li>
                         <li><i class="fa fa-check-circle fa-lg"></i> Server Access</li>
                     </ul>
-                    <p>Location - Dallas</p>
-                    <button>Get Started</button>
+                    <p class="starter-plan__location">Location - Dallas</p>
+                    <button class="starter-plan__startbtn">Get Started</button>
                 </div>
-                <div class="plan_container_content_plan">
-                    <div>
-                        <h3>$ 100</h3>
-                        <h4>Starter Plan</h4>
+                <div class="starter-plan">
+                    <div class="starter-plan__header">
+                        <h3 class="starter-plan__header_heading">$ 100</h3>
+                        <h4 class="starter-plan__header_subheading">Starter Plan</h4>
                     </div>
-                    <ul>
+                    <ul class="starter-plan__list">
                         <li><i class="fa fa-check-circle fa-lg"></i> 3 Projects</li>
                         <li><i class="fa fa-times-circle fa-lg"></i> Server Access</li>
                     </ul>
-                    <p>Location - Dallas</p>
-                    <button>Get Started</button>
+                    <p class="starter-plan__location">Location - Dallas</p>
+                    <button class="starter-plan__startbtn">Get Started</button>
                 </div>
             </div> <!-- Monthly tab Content code end-->
         </div>

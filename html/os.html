@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="VMX Hosted Private Cloud">
+    <meta name="keywords" content="VMX, hosting server, cloud">
+    <title>VMX | OS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="os">
+        <div class="os__block container">
+            <img src="../images/logo.svg" alt="logo" class="logo_img">
+            <div class="os__content">
+                <h2 class="os__content_h2">Select Your Operating System</h2>
+                <ul class="os__content_filter-list">
+                    <li><button class="os__content_filterbtn" onclick="os_btn()">Popular(4)</button></li>
+                    <li><button class="os__content_filterbtn" onclick="os_btn()">For Containers</button></li>
+                    <li><button class="os__content_filterbtn" onclick="os_btn()">VMWare/ESXi(1)</button></li>
+                    <li><button class="os__content_filterbtn" onclick="os_btn()">Licensed(2)</button></li>
+                    <li><button class="os__content_filterbtn--all" id="active_btn" onclick="os_btn_all()">All(11)</button></li>
+                </ul>
+                <!-- Carousel code start -->
+                <div class="owl-carousel os__slider">
+                    <div class="os__sliderwrapper os__sliderwrapper_active">
+                        <div class="os__slider_content">
+                            <img src="../images/Aima.png" alt="aima_logo" class="os__slider_logoimg" id="aima_img">
+                            <div class="os__slider_description">
+                                <h2 class="os__slider_heading">Aima</h2>
+                                <div class="os__slider_hrline"></div>
+                                <p class="os__slider_versionpara">Version</p>
+                                <p class="os__slider_ospara">AimaLinux OS 8</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="os__sliderwrapper">
+                        <div class="os__slider_content">
+                            <img src="../images/alpine_logo.svg" alt="alpine_logo" class="os__slider_logoimg">
+                            <div class="os__slider_description">
+                                <h2 class="os__slider_heading">Alpine</h2>
+                                <div class="os__slider_hrline"></div>
+                                <p class="os__slider_versionpara">Version</p>
+                                <p class="os__slider_ospara">Alpine 3</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="os__sliderwrapper">
+                        <div class="os__slider_content">
+                            <img src="../images/centos_logo.svg" alt="centos_logo" class="os__slider_logoimg">
+                            <div class="os__slider_description">
+                                <h2 class="os__slider_heading">CentOS</h2>
+                                <div class="os__slider_hrline"></div>
+                                <p class="os__slider_versionpara">Version</p>
+                                <p class="os__slider_ospara">CentOS 8</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="os__sliderwrapper">
+                        <div class="os__slider_content">
+                            <img src="../images/ipxe_logo.svg" alt="ipxe_logo" class="os__slider_logoimg--ipxe">
+                            <div class="os__slider_description">
+                                <h2 class="os__slider_heading">Custom iPXE</h2>
+                                <div class="os__slider_hrline"></div>
+                                <p class="os__slider_versionpara">Version</p>
+                                <p class="os__slider_ospara">Custom iPXE</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="os__sliderwrapper">
+                        <div class="os__slider_content">
+                            <img src="../images/ipxe_logo.svg" alt="ipxe_logo" class="os__slider_logoimg--ipxe">
+                            <div class="os__slider_description">
+                                <h2 class="os__slider_heading">Custom iPXE</h2>
+                                <div class="os__slider_hrline"></div>
+                                <p class="os__slider_versionpara">Version</p>
+                                <p class="os__slider_ospara">Custom iPXE</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="os__sliderwrapper">
+                        <div class="os__slider_content">
+                            <img src="../images/Aima.png" alt="aima_logo" class="os__slider_logoimg" id="aima_img">
+                            <div class="os__slider_description">
+                                <h2 class="os__slider_heading">Aima</h2>
+                                <div class="os__slider_hrline"></div>
+                                <p class="os__slider_versionpara">Version</p>
+                                <p class="os__slider_ospara">AimaLinux OS 8</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="os__sliderwrapper">
+                        <div class="os__slider_content">
+                            <img src="../images/alpine_logo.svg" alt="alpine_logo" class="os__slider_logoimg">
+                            <div class="os__slider_description">
+                                <h2 class="os__slider_heading">Alpine</h2>
+                                <div class="os__slider_hrline"></div>
+                                <p class="os__slider_versionpara">Version</p>
+                                <p class="os__slider_ospara">Alpine 3</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="os__sliderwrapper">
+                        <div class="os__slider_content">
+                            <img src="../images/centos_logo.svg" alt="centos_logo" class="os__slider_logoimg">
+                            <div class="os__slider_description">
+                                <h2 class="os__slider_heading">CentOS</h2>
+                                <div class="os__slider_hrline"></div>
+                                <p class="os__slider_versionpara">Version</p>
+                                <p class="os__slider_ospara">CentOS 8</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="os__sliderwrapper">
+                        <div class="os__slider_content">
+                            <img src="../images/ipxe_logo.svg" alt="ipxe_logo" class="os__slider_logoimg--ipxe">
+                            <div class="os__slider_description">
+                                <h2 class="os__slider_heading">Custom iPXE</h2>
+                                <div class="os__slider_hrline"></div>
+                                <p class="os__slider_versionpara">Version</p>
+                                <p class="os__slider_ospara">Custom iPXE</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="os__sliderwrapper">
+                        <div class="os__slider_content">
+                            <img src="../images/ipxe_logo.svg" alt="ipxe_logo" class="os__slider_logoimg--ipxe">
+                            <div class="os__slider_description">
+                                <h2 class="os__slider_heading">Custom iPXE</h2>
+                                <div class="os__slider_hrline"></div>
+                                <p class="os__slider_versionpara">Version</p>
+                                <p class="os__slider_ospara">Custom iPXE</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Carousel code end -->
+                <p class="os__slider_ospara">Selected : <span>Aima (AimaLinux OS 8)</span></p>
+            </div>
+            <!-- nav arrow -->
+            <div class="os__slider_nextarrow">
+                <span class="fa fa-angle-right"></span>
+            </div>
+            <div class="os__slider_prevarrow">
+                <span class="fa fa-angle-left"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Owl Carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- Custom Javascript -->
+    <script src="../js/vmx_script.js"></script>
+</body>
+</html>
